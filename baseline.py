@@ -124,7 +124,7 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--delete', action='store_true', help='Delete the temporary files created during evaluation.')
     parser.add_argument('-g', '--google', dest='run_google_rouge', action='store_true', help='Evaluate with the ROUGE implementation from google/seq2seq.')
     parser.add_argument('--no-rouge', dest='run_rouge', action='store_false', help='Skip ROUGE evaluation.')
-    parser.add_argument('-r', '--check-repeats', action='store_true', help='Evaluate self repeats.')
+    parser.add_argument('-r', '--check_repeats', action='store_true', help='Evaluate self repeats.')
     # ROUGE arguments
     parser.add_argument('--no-stemming', dest='stemming', action='store_false', help='Turn off stemming in ROUGE.')
     parser.add_argument('--n-bootstrap', type=int, default=1000, help='The number of bootstrap samples used in ROUGE.')
